@@ -294,13 +294,15 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: scroll;
 }
 .modal__python, .modal__web {
     padding: 50px;
     background-color: white;
     border-radius: 20px;
-    position: relative;
+    position: absolute;
     border: 1px solid rgba(0, 0, 0, 0.6);
+    top: 50px;
 }
 .close-modal {
     width: 50px;
