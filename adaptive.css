@@ -56,3 +56,14 @@
         flex-wrap: wrap;
     }
 }
+@media screen and (max-width: 500px){
+    .copy {
+        display: none;
+    }
+    .start-page__title {
+        font-size: 30px;
+    }
+    .teacher {
+        flex-direction: column;
+    }
+}
