@@ -8,7 +8,8 @@
     scroll-behavior: smooth;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1240px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 body {
@@ -75,7 +76,8 @@ body {
 }
 .start-page .container {
     display: flex;
-    padding: 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     justify-content: center;
     align-items: center;
     height: 60vh;
@@ -125,7 +127,8 @@ body {
     width: 500px;
 }
 .target .container {
-    padding: 100px 0 100px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 h2 {
     text-align: center;
@@ -263,7 +266,8 @@ h2 {
 }
 
 .footer .container {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
 }
