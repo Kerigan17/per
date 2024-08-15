@@ -179,7 +179,7 @@ h2 {
     content: '12+';
     position: absolute;
     right: 25px;
-    top: 25px;
+    bottom: 25px;
     display: inline-block;
     border: 1px solid black;
     border-radius: 50%;
