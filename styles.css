@@ -1,0 +1,384 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./src/fonts/Montserrat-Light.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    padding: 40px 0;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 40px;
+}
+.header__menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: inline-block;
+    transition: .5s;
+    border-bottom: 1px solid transparent;
+}
+.header__menu li a:hover {
+    transform: scale(1.1);
+    border-bottom: 1px solid black;
+}
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contacts__btn {
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    border-radius: 50%;
+    transition: .5s;
+    transition: .5s
+}
+.contacts__btn svg {
+    width: 25px;
+    height: 25px;
+}
+.contacts__btn:hover{
+    background-color: rgba(0, 0, 0);
+}
+.contacts__btn svg path {
+    transition: .5s;
+}
+.contacts__btn:hover svg path {
+    stroke: white;
+}
+.start-page .container {
+    display: flex;
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.start-page__text {
+    max-width: 500px;
+}
+.start-text__title {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+}
+.start-page__description {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 150px;
+}
+.start-page__image img{
+    border-radius: 20px;
+}
+.start-page__btn {
+    font-size: 20px;
+}
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    transition: .3s;
+    display: inline-block;
+    border: 1px solid transparent;
+}
+.btn:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+}
+.start-page__btn {
+    box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.6), /* Внутренняя тень сверху-слева */
+                 -5px -5px 15px rgba(255, 255, 255, 0.3);
+    padding: 30px 100px;
+}
+.start-page__btn:hover {
+    transform: scale(1.05);
+}
+.start-page__image img {
+    width: 500px;
+}
+.target .container {
+    padding: 100px 0 100px 0;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.target__cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.target__card {
+    max-width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.6), /* Внутренняя тень сверху-слева */
+                 -5px -5px 15px rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+}
+.target__name {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.courses {
+    padding: 100px 0;
+}
+.courses__cards {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.courses__card {
+    padding: 50px 40px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    max-width: 500px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: white;
+    transition: .5s;
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.6), inset -3px -3px 8px rgba(255, 255, 255, 0.3);
+}
+.courses__card::before {
+    content: '12+';
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+}
+.courses__card:hover {
+    transform: scale(1.02);
+    box-shadow:  3px 3px 8px rgba(0, 0, 0, 0.6), /* Внутренняя тень сверху-слева */
+                 -3px -3px 8px rgba(255, 255, 255, 0.3);
+    border: 1px solid transparent;cursor: pointer;
+}
+.courses__name {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.courses__btn {
+    margin-top: 50px;
+    border-bottom: 1px solid black;
+    display: inline-block;
+}
+.education {
+    padding: 100px 0;
+}
+.education__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 100px;
+    justify-content: center;
+}
+.education__card {
+    padding: 30px;
+    border: 1px solid black;
+    width: 300px;
+    display: flex;
+    gap: 40px;
+    border-radius: 20px;
+    align-items: center;
+}
+.education__name {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.education__icon img {
+    width: 40px;
+}
+.teachers {
+    padding: 100px 0;
+}
+.teachers__cards {
+    display: flex;
+    justify-content: space-between;
+}
+.teacher {
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    width: 45%;
+    box-shadow:  3px 3px 8px rgba(0, 0, 0, 0.6), -3px -3px 8px rgba(255, 255, 255, 0.3);
+}
+.teacher__photo {
+    border: 1px solid black;
+    width: 200px;
+    flex-shrink: 0;
+    height: 250px;
+    border-radius: 10px 0 0 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.teacher__name {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.teacher__phrase {
+    margin: 0 0 25px 15px;
+    font-style: italic;
+}
+.teacher__education, .teacher__experiens {
+    margin-bottom: 10px;
+}
+.teacher__education span, .teacher__experiens span, .teacher__courses span{
+    font-size: 20px;
+}
+
+.footer .container {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .container > div {
+    width: 30%;
+}
+.footer .copy {
+    text-align: center;
+}
+.footer .contacts {
+    justify-content: flex-end;
+}
+.courses__modal {
+    display: none;
+}
+.courses__modal.active{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal__python, .modal__web {
+    padding: 50px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.close-modal {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: .5s;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+.close-modal svg {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.close-modal:hover {
+    background-color: black;
+}
+.close-modal:hover svg path {
+    fill: white;
+}
+.modal__plan {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.modal__chapter {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6),  -3px -3px 8px rgba(255, 255, 255, 0.3);
+    padding: 20px 30px;
+    width: 30%;
+    border-radius: 20px;
+    position: relative;
+}
+.modal__name {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+}
+.modal__description {
+    max-width: 800px;
+    text-align: justify;
+}
+.modal__description span {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.courses__modal .contacts {
+    margin-top: 30px;
+}
+.modal__contacts {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.modal__btn svg{
+    width: 25px;
+}
+.modal__btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+    transition: .5s;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6),  -3px -3px 8px rgba(255, 255, 255, 0.3);
+}
+.modal__btn:hover {
+    background-color: black;
+    color: white;
+}
+.modal__btn:hover svg path {
+    stroke: white;
+}
