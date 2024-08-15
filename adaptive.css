@@ -1,0 +1,58 @@
+@media screen and (max-width: 970px){
+    .start-page__image {
+        display: none;
+    }
+    .start-page .container {
+        position: relative;
+    }
+    .start-page .container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url('./src/images/header-img.png');
+        background-position: center;
+        background-size: cover;
+        filter: blur(8px);
+    }
+    .start-page__text {
+        text-align: center;
+    }
+    .start-page__text h1, .start-page__text p {
+        color: white;
+        text-shadow: 0 0 15px black;
+    }
+    .courses__cards {
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 930px) {
+    header .container nav {
+        display: none;
+    }
+    .header .container {
+        justify-content: flex-end;
+    }
+    .courses__cards {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .education__cards {
+        gap: 20px;
+    }
+    .teachers__cards {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .teacher {
+        width: 90%;
+    }
+    .target__cards {
+        flex-wrap: wrap;
+    }
+}
