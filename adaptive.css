@@ -87,4 +87,6 @@
     .modal__btn span {
         display: none;
     }
+    .teacher__photo {
+        border-radius: 10px;
 }
