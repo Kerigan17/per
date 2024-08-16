@@ -179,7 +179,7 @@ h2 {
     content: '12+';
     position: absolute;
     right: 25px;
-    bottom: 25px;
+    top: 25px;
     display: inline-block;
     border: 1px solid black;
     border-radius: 50%;
@@ -246,9 +246,14 @@ h2 {
     border: 1px solid black;
     width: 200px;
     flex-shrink: 0;
-    height: 250px;
     border-radius: 10px 0 0 10px;
     background-color: rgba(0, 0, 0, 0.1);
+    height: max-content;
+    overflow: hidden;
+}
+.teacher__photo img {
+    width: 100%;
+    vertical-align: top;
 }
 .teacher__name {
     font-size: 30px;
